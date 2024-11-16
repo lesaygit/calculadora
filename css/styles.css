@@ -1,0 +1,110 @@
+/* Mobile-first styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs label,
+.options label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options label {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+button#calcular {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#calcular:hover {
+    background-color: #0056b3;
+}
+
+/* Ajustes para el área de reporte */
+.report {
+    flex: 1;
+    min-height: 45vh; /* Ocupa al menos el 45% del alto de la pantalla */
+    padding: 10px;
+    overflow-y: auto; /* Permite desplazarse si hay muchos resultados */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.report h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.report ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.report ul li {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

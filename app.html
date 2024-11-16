@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financiera</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Calculadora Financiera</h1>
+        </header>
+        <section class="calculator">
+            <div class="inputs">
+                <label for="entrada">Entrada de Dinero</label>
+                <input type="number" id="entrada" placeholder="0.00">
+                
+                <label for="gasto">Gasto Combustible</label>
+                <input type="number" id="gasto" placeholder="0.00">
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="tipo" value="ahorro" >
+                    litro x 300
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="inversion" checked>
+                    litro x 350
+                </label>
+            </div>
+
+            <button id="calcular">Calcular</button>
+
+            <div class="report">
+                <h2>Reporte</h2>
+                <ul id="listadoResultados"></ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
