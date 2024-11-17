@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Financiera</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <main>
         <header>
@@ -15,18 +17,17 @@
             <div class="inputs">
                 <label for="entrada">Entrada de Dinero</label>
                 <input type="number" id="entrada" placeholder="0.00">
-                
+
                 <label for="gasto">Gasto Combustible</label>
                 <input type="number" id="gasto" placeholder="0.00">
             </div>
 
             <div class="options">
                 <label>
-                    <input type="radio" name="tipo" value="ahorro" >
-                    litro x 300
+                    <input type="radio" name="tipo" value="300">litro x 300
                 </label>
                 <label>
-                    <input type="radio" name="tipo" value="inversion" checked>
+                    <input type="radio" name="tipo" value="350" checked>
                     litro x 350
                 </label>
             </div>
@@ -39,16 +40,31 @@
             <div class="report">
                 <h2>Reporte</h2>
                 <ul id="listadoResultados">
-                    <li><p>dinero bruto: $ 20000</p></li>
-                    <li><p>gasto diesel: $ 7000</p></li>
-                    <li><p>resto de saldo:</p></li>
-                    <li><p class="salario">pago chofer: $3000</p></li>
-                    <li><p>resto -s -p -S: $ 9000</p></li>
-                    <li><p class="saldo">saldo final: $ 15000</p></li>
-             
+                    <li>
+                        <div class="reportContainer"><p>dinero bruto: $</p><p id="reportEntrada">20000</p></div>
+                    </li>
+                    <li>
+                        <div class="reportContainer"><p>gasto diesel: $</p><p id="reportDiesel"></p></div>
+                    </li>
+                    <li>
+                        <div class="reportContainer"><p>resto de saldo: $</p><p id="reportRestoSaldo"></p></div>
+                    </li>
+                    <li>
+                        <div class="reportContainer"><p class="salario">pago chofer: $</p><p id="repoSalario"></p></div>
+                    </li>
+                    <li>
+                        <div class="reportContainer"><p>resto -s -p -S: $</p><p id="repoRestoSsp"></p></div>
+                    </li>
+                    <li>
+                        <div class="reportContainer"><p class="saldo">saldo final: $</p><p id="saldoFinal"></p></div>
+                    </li>
+
                 </ul>
             </div>
         </section>
     </main>
+    <!--scriptsrc section-->
+    <script src="js/calculator.js"></script>
 </body>
+
 </html>
